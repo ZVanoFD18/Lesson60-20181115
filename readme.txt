@@ -31,3 +31,9 @@ express -e -s
 ## В опциях запуска PHPStorm.
 Menu/Run/Edit Configurations/Environment Variables/Add:
 NODE_PATH=.
+
+
+# Устанавливам клиента БД "mongodb" (этот клиент дается академией ШАГ).
+>npm i mongodb
+# Либо более высокоуровневый клиент "mongoose" (этот клиент предлагает Илья Кантор).
+>npm i mongoose
