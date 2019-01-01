@@ -2,7 +2,7 @@ var fs = require('fs'),
     nconf = require('nconf');
 var path = require('path');
 /**
- * Додуль тут
+ * Модуль тут
  * @see https://www.npmjs.com/package/nconf
  * @type {*|string}
  */
