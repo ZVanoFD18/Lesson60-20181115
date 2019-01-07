@@ -2,7 +2,7 @@
   "ENV" : "development",
   "port" : 80,
   "db" : {
-    "connString" : "mongodb+srv://vityabond:gJgNSW4jYg4uRnjn@cluster0-3cvi0.mongodb.net/test?retryWrites=true",
+    "connString" : "mongodb+srv://admin0:admin0pass@cluster0-bfecv.mongodb.net/test?retryWrites=true",
     "options" : {
       "useNewUrlParser" : true
     }

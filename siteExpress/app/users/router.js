@@ -12,8 +12,15 @@ var controller = require('./Controller');
 
 router.get('/list', controller.list);
 router.get('/item', controller.item);
+
 router.get('/add', controller.add);
 router.post('/add', controller.add);
+
+router.get('/edit', controller.edit);
+router.post('/edit', controller.edit);
+
+
+router.get('/remove', controller.remove);
 router.post('/remove', controller.remove);
 
 module.exports = router;

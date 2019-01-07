@@ -1,0 +1,168 @@
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+#id-mask .mask-background {
+    z-index: 9998;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+/*
+    background-color: rgb(230, 230, 230);
+    opacity: 0.5;
+*/
+    background-color: rgba(230, 230, 230, .5);
+}
+
+#id-mask .mask-text {
+    position: fixed;
+    z-index: 9999;
+    font-size: 2rem;
+    text-align: center;
+    color: darkgreen;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: inline-block;
+    padding: 15px 30px;
+    border: 3px double gray;
+    border-radius: 15px;
+    background-color: #cccccc;
+}
+
+table.users {
+    width: 100%;
+}
+
+table.users {
+    border: 1px solid black;
+}
+table.users > thead > tr > th
+, table.users > tbody > tr > td
+{
+    border: 1px solid black;
+}
+table.users > tbody > tr:hover {
+    background-color: cornsilk;
+}
+
+table.users > tbody > tr > td {
+    padding: 0 5px;
+}
+
+table.users > tbody > tr > td.user-id {
+    font-weight: bold;
+    text-align: right;
+}
+
+.page-menu{
+    margin: 5px 0;
+}
+.page-menu>ul{
+    padding: 10px 0;
+}
+
+.page-menu>ul
+, .page-menu>ul>li
+{
+    display: inline;
+}
+.mi {
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 5px 30px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.mi:hover {
+    background-color: aquamarine;
+}
+
+.actions-item:hover {
+    border-radius: 6px;
+    background-color: aquamarine;
+}
+
+.actions-item {
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 5px;
+    padding: 3px    ;
+}
+
+#user-iu {
+    width: 550px;
+    border: 1px solid gray;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #CCCEFF;
+}
+
+.user-iu-inputs{
+    height: 300px;
+    overflow: auto;
+}
+
+#user-iu .title {
+    background-color: aquamarine;
+    font-weight: bold;
+}
+#user-iu label{
+    display: block;
+    height: 2.4rem;
+}
+#user-iu .label-container {
+    display: inline-block;
+    margin-left: 1%;
+    width: 20%;
+    margin-top: 6px;
+}
+#user-iu input{
+    width: 75%;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.user-iu-buttons {
+    padding: 0.3rem 0px;
+    margin: 0.3rem;
+    border: 1px dashed;
+    text-align: center;
+}
+
+#user-iu button {
+    display: inline-block;
+}
+.sv-error{
+    font-size: 0.8rem;
+    text-align: center;
+    color: red;
+}
+
+/**
+ * Стили по умолчанию
+ */
+fieldset {
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    padding-bottom: 6px;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+legend{
+    padding: 0px 3px;
+}

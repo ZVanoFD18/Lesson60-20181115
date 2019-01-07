@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson56-20181030-homework</title>
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <script src="/javascripts/App.js"></script>
+    <script src="/javascripts/Mask.js"></script>
+    <script src="/javascripts/Users.js"></script>
+    <script src="/javascripts/User.js"></script>
+    <script src="vendor/sv/Sv.js"></script>
+    <script src="vendor/sv/SvBaseValidator.js"></script>
+    <script src="vendor/sv/SvBaseResult.js"></script>
+    <script src="vendor/sv/validators/SvValidatorEMail.js"></script>
+    <script src="vendor/sv/validators/SvValidatorInn.js"></script>
+    <script src="vendor/sv/validators/SvValidatorPhoneInnational.js"></script>
+    <script src="vendor/sv/validators/SvValidatorPassword.js"></script>
+    <script src="vendor/sv/validators/SvValidatorLogin.js"></script>
+    <script src="vendor/sv/validators/SvValidatorNumber.js"></script>
+    <script src="vendor/sv/validators/SvValidatorUrl.js"></script>
+</head>
+<body>
+<div id="id-mask" class="hidden">
+    <div class="mask-background"></div>
+    <div class="mask-text">Загрузка...</div>
+</div>
+<div class="page-menu">
+    <ul>
+        <li><span class="mi mi-users-load">Загрузить список пользователей</span></li>
+    </ul>
+    <ul>
+        <li><span class="mi mi-users-add">Добавить пользователя</span></li>
+    </ul>
+</div>
+<table class="users" border="1">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>Login</th>
+        <th>Имя</th>
+        <th>e-mail</th>
+        <th>Телефон</th>
+        <th>Действия</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--
+        <tr>
+            <td>id</td>
+            <td>Login</td>
+            <td>Имя</td>
+            <td>e-mail</td>
+            <td>Телефон</td>
+            <td>
+                <div class="actions-item action-edit">edit</div>
+                <div class="actions-item action-remove">remove</div>
+            </td>
+        </tr>
+    -->
+    </tbody>
+</table>
+<div id="user-iu" class="hidden">
+    <div class="title">Добавление</div>
+    <form action="">
+        <div class="user-iu-inputs">
+            <!--<input type="hidden" name="id">-->
+            <label for="">
+                <div class="label-container">id:</div>
+                <input type="text" name="id" readonly="readonly">
+            </label>
+            <label for="">
+                <div class="label-container">login:</div>
+                <input type="text" name="login" >
+            </label>
+            <label for="">
+                <div class="label-container">name:</div>
+                <input type="text" name="name">
+            </label>
+            <label for="">
+                <div class="label-container">email:</div>
+                <input type="text" name="email" data-v-name="eMail">
+            </label>
+            <fieldset>
+                <legend>address</legend>
+                <label for="">
+                    <div class="label-container">street:</div>
+                    <input type="text" name="street">
+                </label>
+                <label for="">
+                    <div class="label-container">suite:</div>
+                    <input type="text" name="suite">
+                </label>
+                <label for="">
+                    <div class="label-container">city:</div>
+                    <input type="text" name="city">
+                </label>
+                <label for="">
+                    <div class="label-container">zipcode:</div>
+                    <input type="text" name="zipcode" data-v-name="number">
+                </label>
+                <fieldset>
+                    <legend>geo</legend>
+                    <label for="">
+                        <div class="label-container">lat:</div>
+                        <input type="text" name="lat">
+                    </label>
+                    <label for="">
+                        <div class="label-container">lng:</div>
+                        <input type="text" name="lng">
+                    </label>
+                </fieldset>
+            </fieldset>
+            <label for="">
+                <div class="label-container">phone:</div>
+                <input type="text" name="phone" data-v-name="phoneInnational">
+            </label>
+            <label for="">
+                <div class="label-container">website:</div>
+                <input type="text" name="website" data-v-name="url">
+            </label>
+
+            <fieldset>
+                <legend>company</legend>
+                <label for="">
+                    <div class="label-container">companyName:</div>
+                    <input type="text" name="companyName">
+                </label>
+                <label for="">
+                    <div class="label-container">catchPhrase:</div>
+                    <input type="text" name="catchPhrase">
+                </label>
+                <label for="">
+                    <div class="label-container">bs:</div>
+                    <input type="text" name="bs">
+                </label>
+            </fieldset>
+        </div>
+
+        <div class="user-iu-buttons">
+            <button class="button-save">Сохранить</button>
+            <button class="button-cancel">Отмена</button>
+        </div>
+    </form>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        App.run();
+    });
+</script>
+</body>
+</html>
